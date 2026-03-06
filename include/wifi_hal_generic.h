@@ -1223,6 +1223,7 @@ typedef struct _wifi_associated_dev3
     ULLONG cli_RxErrors; /**< Number of RX errors. */
     BOOL cli_MLDEnable; /* Indicates whether the connected client uses a single link or multi-link connections, false - single link and true - multi-link. */
     mac_address_t cli_MLDAddr; /* Indicates the MLD MAC address of the connected client, 00's for non-Wi-Fi 7 clients. */
+    BOOL cli_MLDPrimaryLink; /* Indicated to which link is MLO client assotiated. TRUE for auth/primary link, FALSE for secondary links */
 } wifi_associated_dev3_t;
 
 /** @} */  //END OF GROUP WIFI_HAL_TYPES
